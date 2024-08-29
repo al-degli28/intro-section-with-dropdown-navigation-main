@@ -1,0 +1,55 @@
+.hero-desktop{
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0 0;
+  align-items: center;
+
+  .wrapper{
+    h2{
+      font-size: 50px;
+      margin: 100px 0 50px 0;
+    }
+
+    p{
+      margin: 0 0 50px 0;
+    }
+
+    aside{
+     position: relative;
+     top: 50px;
+
+     img{
+      width: 20%;
+      padding: 0 10px 0 10px;
+     }
+    }
+
+    button{
+      display: block;
+      font-weight: 700;
+      color: $first-neutral-color;
+      background: $third-neutral-color;
+      border: none;
+
+      &:hover{
+        background: $first-neutral-color;
+        color: $third-neutral-color;
+        transition: all 0.3s;
+        border: 1px solid $third-neutral-color;
+      }
+    }
+  }
+
+  img{
+    width: 25%;
+  }
+}
+
+.hero-mobile{
+  display: none;
+}
+
+footer{
+  display: none;
+}
+  

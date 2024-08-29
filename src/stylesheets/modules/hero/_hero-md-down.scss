@@ -1,0 +1,29 @@
+.hero-mobile{
+  img{
+    &:first-of-type{
+      display: block;
+      width: 100%;
+      margin: auto;
+      padding: 95px 0 0 0;
+    }
+
+    &:last-of-type{
+      display: none;
+    }
+  }
+
+  button{
+    &:hover{
+      background: $first-neutral-color;
+      color: $third-neutral-color;
+      transition: all 0.3s;
+      border: 1px solid $third-neutral-color;
+    }
+  }
+}
+
+footer{
+  img{
+    width: 15%;
+  }
+}

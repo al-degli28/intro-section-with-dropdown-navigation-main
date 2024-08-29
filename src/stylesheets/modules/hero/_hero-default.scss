@@ -1,0 +1,12 @@
+.hero-mobile{
+  button{
+    display: block;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 12px;
+    color: $first-neutral-color;
+    background: $third-neutral-color;
+    border: none;
+  }
+}

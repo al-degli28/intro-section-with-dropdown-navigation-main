@@ -1,0 +1,102 @@
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  
+  nav{
+    display: none;
+   
+    
+    ul{
+      &:first-of-type, &:last-of-type{
+        display: none;
+      }
+    }
+  }
+}
+
+.hamburger-menu{
+  display: block;
+  cursor: pointer;
+}
+
+
+.active-state-1, .active-state-2{
+  display: none;
+}
+
+
+.mobile-menu-collapsed{
+  display: none;
+  background: #fff;
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  margin: 61px 0 0 0;
+  border-radius: 1px;
+  z-index: 1;
+
+  nav{
+    margin: 100px 0 0 20px;
+    
+    ul{
+      padding: 0;
+
+      li{
+        list-style: none;
+        margin: 20px 0;
+
+        #todo-list,  #calendar,  #reminders,  #planning, #history, #team, #blog{
+          display: none;
+        }
+        
+
+        img{
+          &:first-of-type{
+            width: 10px;
+            margin-left: 5px;
+            position: relative;
+            bottom: 2px;
+          }
+
+          &:nth-child(1){
+            margin-right: 10px;
+            width: 15px;
+            top: 2px;
+
+          }
+        }
+
+        a{
+          text-decoration: none;
+          color: $second-neutral-color;
+        }
+
+        &:nth-child(2) a, &:nth-child(3) a, &:nth-child(4) a, &:nth-child(5) a, &:nth-child(7) a, &:nth-child(8) a, &:nth-child(9) a{
+          margin: 0 0 0 20px;
+        }
+        
+        &:nth-child(12){
+          text-align: center;
+        }
+      }
+      button.register-button{
+        margin: auto;
+        display: block;
+        padding: 15px;
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid $third-neutral-color;
+        background: $first-neutral-color;
+      }
+
+    }
+  }
+}
+
+
+
+    
+
+    

@@ -1,0 +1,17 @@
+@import "navbar-default";
+
+// Schermi minori di 375px
+@media (max-width: $br-sm){
+  @import "navbar-sm-down";
+}
+
+// Schermi maggiori di 1440px
+@media (min-width: $br-md){
+  @import "navbar-md-up";
+}
+
+
+// Schermi maggiori di 375px e minori di 1440px
+@media (min-width: $br-sm) and (max-width: $br-md){
+  @import "navbar-md-down";
+}
